@@ -169,34 +169,34 @@ fetch('https://api.coingecko.com/api/v3/coins/polkadot')
 });
 
 // Fetch data for Binance Coin
-fetch('https://api.coingecko.com/api/v3/coins/binancecoin')
+fetch('https://api.coingecko.com/api/v3/coins/shiba-inu')
   .then(response => response.json())
   .then(data => {
     const price = data.market_data.current_price.usd;
     const mcap = data.market_data.market_cap.usd;
     const pChange24h = data.market_data.price_change_percentage_24h;
     const volumeB=data.market_data.total_volume.usd;
-    document.getElementById("bnbprice").innerHTML = "$"+price;
-    document.getElementById("bnbmcap").append (" $"+mcap);
-    document.getElementById("bnbpc24H").append(" "+pChange24h+" %")
-    document.getElementById("bnbvol").append(" $"+volumeB);
+    document.getElementById("shibprice").innerHTML = "$"+price;
+    document.getElementById("shibmcap").append (" $"+mcap);
+    document.getElementById("shibpc24H").append(" "+pChange24h+" %")
+    document.getElementById("shibvol").append(" $"+volumeB);
   })
   .catch(error => {
     console.error(error);
   });
 
   // Fetch data for Binance Coin
-fetch('https://api.coingecko.com/api/v3/coins/binancecoin')
+fetch('https://api.coingecko.com/api/v3/coins/litecoin')
 .then(response => response.json())
 .then(data => {
   const price = data.market_data.current_price.usd;
   const mcap = data.market_data.market_cap.usd;
   const pChange24h = data.market_data.price_change_percentage_24h;
   const volumeB=data.market_data.total_volume.usd;
-  document.getElementById("bnbprice").innerHTML = "$"+price;
-  document.getElementById("bnbmcap").append (" $"+mcap);
-  document.getElementById("bnbpc24H").append(" "+pChange24h+" %")
-  document.getElementById("bnbvol").append(" $"+volumeB);
+  document.getElementById("ltcprice").innerHTML = "$"+price;
+  document.getElementById("ltcmcap").append (" $"+mcap);
+  document.getElementById("ltcpc24H").append(" "+pChange24h+" %")
+  document.getElementById("ltcvol").append(" $"+volumeB);
 })
 .catch(error => {
   console.error(error);
