@@ -1,10 +1,29 @@
-fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false')
+// Fetch data for Bitcoin
+fetch('https://api.coingecko.com/api/v3/coins/bitcoin')  
+.then(response => response.json())
+.then(data => {
+    const price = data.market_data.current_price.usd;
+    document.getElementById("btcprice").innerHTML = "$"+price;
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+// Fetch data for Ethereum
+fetch('https://api.coingecko.com/api/v3/coins/ethereum')
   .then(response => response.json())
   .then(data => {
-    const prices= data.map(crypto => crypto.current_price)
-    const image = data.map(crypto => crypto.image)
-    console.log(prices);
-    console.log(image)
+    console.log(data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+// Fetch data for Cardano
+fetch('https://api.coingecko.com/api/v3/coins/cardano')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
   })
   .catch(error => {
     console.error(error);
