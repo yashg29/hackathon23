@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Trackmyportfolio</title>
 </head>
 <body>
@@ -37,21 +38,21 @@
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BITCOIN</h2>
                         <p id="btcprice" class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none"></p>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id="btcmcap" class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>Marketcap
                         </p>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "btcpc24H" class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>Price change 24H
                         </p>
-                        <p class="flex items-center text-gray-600 mb-6">
+                        <p id = "btcvol" class="flex items-center text-gray-600 mb-6">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
@@ -71,25 +72,24 @@
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">ETHEREUM</h2>
-                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                          <span>$38</span>
+                        <h1 id = "ethprice" class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                           
                         </h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id="ethmcap" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Marketcap
                           </p>
-                          <p class="flex items-center text-gray-600 mb-2">
+                          <p id = "ethpc24H"class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Price change 24H
                           </p>
-                          <p class="flex items-center text-gray-600 mb-6">
+                          <p id = "ethvol" class="flex items-center text-gray-600 mb-6">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
@@ -110,25 +110,24 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BNB</h2>
-                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                          <span>$56</span>
+                        <h1 id = "bnbprice" class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                           <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
                         </h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "bnbmcap" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Marketcap
                           </p>
-                          <p class="flex items-center text-gray-600 mb-2">
+                          <p id = "bnbpc24H" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Price change 24H
                           </p>
-                          <p class="flex items-center text-gray-600 mb-6">
+                          <p id = "bnbvol" class="flex items-center text-gray-600 mb-6">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
@@ -146,25 +145,24 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">XRP</h2>
-                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                          <span>$72</span>
+                        <h1 id ="xrpprice" class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                           <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
                         </h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "xrpmcap" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Marketcap
                           </p>
-                          <p class="flex items-center text-gray-600 mb-2">
+                          <p id = "xrppc24H" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Price change 24H
                           </p>
-                          <p class="flex items-center text-gray-600 mb-6">
+                          <p id = "xrpvol" class="flex items-center text-gray-600 mb-6">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
@@ -192,22 +190,22 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">ADA</h2>
-                        <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <h1 id = "adaprice" class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+                        <p  id = "adamcap" class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>Marketcap
                         </p>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "adapc24H"class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>Tumeric plaid portland
                         </p>
-                        <p class="flex items-center text-gray-600 mb-6">
+                        <p id = "adavol" class="flex items-center text-gray-600 mb-6">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
@@ -225,18 +223,18 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">OKB</h2>
-                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                          <span>$38</span>
+                        <h1 id = "okbprice"class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                          <span></span>
                           
                         </h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id="okbmcap" class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>Marketcap
                         </p>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "okbpc24H" class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
@@ -244,7 +242,7 @@
                           </span>Tumeric plaid portland
                         </p>
                         
-                        <p class="flex items-center text-gray-600 mb-6">
+                        <p id ="okbvol" class="flex items-center text-gray-600 mb-6">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
@@ -262,25 +260,25 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">DOGE</h2>
-                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                        <h1 id = "dogeprice" class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                           <span>$56</span>
                           <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
                         </h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "dogemcap" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Marketcap
                           </p>
-                          <p class="flex items-center text-gray-600 mb-2">
+                          <p id = "dogepc24H" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Price change 24H
                           </p>
-                          <p class="flex items-center text-gray-600 mb-6">
+                          <p id = "dogevol" class="flex items-center text-gray-600 mb-6">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
@@ -298,25 +296,25 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">MATIC</h2>
-                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                        <h1 id = "maticprice" class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                           <span>$72</span>
                           <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
                         </h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "maticmcap" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Marketcap
                           </p>
-                          <p class="flex items-center text-gray-600 mb-2">
+                          <p id = "maticpc24H" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Price change 24H
                           </p>
-                          <p class="flex items-center text-gray-600 mb-6">
+                          <p id = "maticvol" class="flex items-center text-gray-600 mb-6">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
@@ -343,22 +341,22 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SOL</h2>
-                        <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <h1 id = "solprice" class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+                        <p id = "solmcap" class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>Marketcap
                         </p>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "solpc24H" class="flex items-center text-gray-600 mb-2">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>Tumeric plaid portland
                         </p>
-                        <p class="flex items-center text-gray-600 mb-6">
+                        <p id = "solvol" class="flex items-center text-gray-600 mb-6">
                           <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                               <path d="M20 6L9 17l-5-5"></path>
@@ -376,25 +374,25 @@
                     <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                       <div class="h-full p-6 rounded-lg border-2 border-gray-400 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">DOT</h2>
-                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                        <h1 id = "dotprice" class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                           <span>$38</span>
                           <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
                         </h1>
-                        <p class="flex items-center text-gray-600 mb-2">
+                        <p id = "dotmcap" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Marketcap
                           </p>
-                          <p class="flex items-center text-gray-600 mb-2">
+                          <p id = "dotpc24H" class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
                               </svg>
                             </span>Price change 24H
                           </p>
-                          <p class="flex items-center text-gray-600 mb-6">
+                          <p id = "dotvol" class="flex items-center text-gray-600 mb-6">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                 <path d="M20 6L9 17l-5-5"></path>
